@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@keyframes festival{
+    from{
+        opacity: 0;
+        transform: rotate(-90deg);
+    }to{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes evenement{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+nav ul{
+    width: 1200px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+nav ul li{
+    float: left;
+    text-align: right;
+}
+
+nav ul li a{
+    display: block;
+    width: 240px;
+    text-align: right;
+    line-height: 50px;
+    text-decoration: none;
+    color: red;
+    font-size: 30px;
+    font-family: 'Roboto';
+}
+
+#home{
+    height: 700px;
+    width: 100%;
+    background-color: green;
+    overflow: hidden;
+}
+
+#bghome{
+    background-size: inherit;
+    background-repeat:no-repeat;
+    height: 500px;
+    width: 100%;
+    height: 700px;
+    filter:brightness(1);
+    filter:grayscale(0.7);
+}
+
+#titre{
+    font-family: 'Reenie Beanie';
+    color: red;
+    font-size: 125px;
+    animation-name: festival;
+    animation-duration: 2s;
+    text-align: center;
+    position: absolute;
+    top: 120px;
+    left: 50px;
+}
+
+#evenement{
+    font-family: 'Roboto';
+    color: #D61A1A;
+    font-size: 55px;
+    position: absolute;
+    top: 250px;
+    right: 330px;
+    animation-name: evenement;
+    animation-duration: 3s;
+    animation-delay: inherit;
+}
+
+#apropos{
+    height: 700px;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(images/concert.jpg);
+    position: relative;
+}
+
+#titreapropos{
+    font-family: 'Reenie Beanie';
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    margin-right: 850px;
+}
+
+#texteapropos{
+    font-family: 'Reenie Beanie';
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    top: 210px;
+    left: 120px;
+    margin-right: 850px;
+}
+
+#imageapropos{
+    filter:grayscale(0.7);
+}
+
+#programme{
+    height: 700px;
+    width: 100%;
+    background-color: #862626;
+}
+
+#lundi, #mardi{
+    font-family: 'Reenie Beanie';
+    color: white;
+    font-size: 50px;
+}
+
+#lundi{
+    text-align: left;
+    margin-top: -15px;
+    margin-left: 150px;
+}
+
+#mardi{
+    text-align: left;
+    margin-top: -155px;
+    margin-left: 1180px;
+}
+
+.artisteslundi, .artistesmardi{
+    font-size: 30px;
+    font-family: 'Reenie Beanie';
+    color: black;
+}
+
+#horairelundi{
+    margin-left: 150px;
+}
+
+#horairemardi{
+    margin-left: 1175px;
+    margin-top: -255px;
+}
+
+#titrehoraire, #titreinscription{
+    font-family: 'Reenie Beanie';
+    color: white;
+    font-size: 85px;
+    text-align: center;
+}
+
+#titreapropos{
+    font-family: 'Reenie Beanie';
+    color: white;
+    font-size: 85px;
+}
+
+.separation{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+}
+
+#inscription{
+    height: 900px;
+    width: 100%;
+    background-color: #862626;
+}
+
+#texteinscription{
+    font-family: 'Reenie Beanie';
+    color: black;
+    font-size: 85px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.imageinscription{
+    height: 350px;
+    width: 125px;
+    margin-left: 775px;
+    margin-top: -685px;
+}
+
+#public1, #public2{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 475px;
+    height: 290px;
+
+}
+
+footer{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#copyright, #reservation{
+    color: white;
+    font-size: 50px;
+    font-family: 'Reenie Beanie';
+	margin-left: 10px;
+}
+
+#sponsors{
+    font-family: 'Reenie Beanie';
+    color: white;
+    font-size: 99px;
+	margin-left: 10px;
+}
+
+#contact{
+    background-color:#862626;
+}
+
+h1{
+    font-family: 'Reenie Beanie';
+    color: black;
+    font-size: 99px;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+    margin: 80px;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 780px){
+	
+	nav{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+	
+	nav ul{
+    width: 600px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+nav ul li{
+    float: left;
+    text-align: right;
+}
+	
+	#apropos{
+    height: 700px;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(images/concert.jpg);
+    position: relative;
+}
+    
+    .logo{
+        margin: 10px;
+    }
+	
+	#titreapropos{
+    font-family: 'Reenie Beanie';
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    margin-right: 850px;
+	margin-top: -105px;
+}
+
+#texteapropos{
+    font-family: 'Reenie Beanie';
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 210px;
+    left: 120px;
+    margin-left: 65px;
+	margin-top: -205px;
+}
+
+#lundi{
+    text-align: left;
+    margin-top: -20px;
+    margin-left: 150px;
+}
+
+#mardi{
+    text-align: left;
+    margin-top: -160px;
+    margin-left: 469px;
+}
+
+.artisteslundi, .artistesmardi{
+    font-size: 30px;
+    font-family: 'Reenie Beanie';
+    color: black;
+}
+
+#horairelundi{
+    margin-left: 150px;
+}
+
+#horairemardi{
+    margin-left: 475px;
+    margin-top: -265px;
+}
+
+#inscription{
+    height: 650px;
+    width: 100%;
+    background-color: #862626;
+}
+
+#texteinscription{
+    font-family: 'Reenie Beanie';
+    color: black;
+    font-size: 45px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.imageinscription{
+    height: 350px;
+    width: 125px;
+    margin-left: 445px;
+    margin-top: -355px;
+}
+
+#public1, #public2{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 275px;
+    height: 190px;
+
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .logo{
+        margin: 10px;
+    }
+}
